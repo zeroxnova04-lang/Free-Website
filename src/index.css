@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:ital,wght@1,900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+  
+  --color-primary-red: #E51636;
+  --color-dark-red: #B3102A;
+  --color-warm-cream: #FFF8F0;
+  --color-text-dark: #1A1A1A;
+  --color-text-gray: #6B6B6B;
+
+  --radius-card: 16px;
+  --radius-button: 50px;
+
+  --shadow-premium: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+@layer base {
+  body {
+    @apply bg-warm-cream text-text-dark font-sans overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .hero-gradient {
+    background: radial-gradient(circle at center, #fff 0%, #ffe0e0 100%);
+  }
+}
